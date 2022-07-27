@@ -6,6 +6,6 @@ from .views import (
 )
 
 urlpatterns = [
-    path('api', CatalogListApiView.as_view()),
-    path('api/<int:catalog_id>', CatalogDetailApiView.as_view()),
+    path('', CatalogListApiView.as_view()),
+    path('<int:catalog_id>', CatalogDetailApiView.as_view()),
 ]
